@@ -23,20 +23,19 @@ where location like '%india%'
 order by 1,2
 
 
---Looking at countries with highes infection rate compared to population
+--Looking at countries with highest infection rate compared to population
 
 select location,population,max(total_cases) as Highest_Infection_Count, max(round((total_cases/population)*100,4)) as percentage_of_population_infected
 from  portfolio_project_1..CovidDeaths
---where location like '%india%'
 group by location, population
 order by  percentage_of_population_infected desc, Highest_Infection_Count desc,location
 
 
+  
 --Showing countries with highest death counts per population
 
 select location,max(cast (total_deaths as int)) as Highest_Death_Count
 from  portfolio_project_1..CovidDeaths
---where location like '%india%'
 where continent is not null
 group by location
 order by  Highest_Death_Count desc		
@@ -46,7 +45,6 @@ order by  Highest_Death_Count desc
 
 select continent,max(cast (total_deaths as int)) as Highest_Death_Count
 from  portfolio_project_1..CovidDeaths
---where location like '%india%'
 where continent is not null
 group by continent
 order by  Highest_Death_Count desc		
