@@ -1,0 +1,9 @@
+In this project, we followed a systematic approach to analyse the data of the bike store.
+1. Created the database in MS-SQL server.
+2. Created 2 schemas, i.e., productions and sales.
+3. Created tables for both the schemas.
+4. Inserted data into the tables through SQL queries.
+5. Then wrote a main query to fetch only the desired columns and fields across the database in a particular order.
+6. Imported the data from the MS-SQL server to an MS-Exce sheet.
+7. Performed data cleaning.
+8. Performed data visualization to create interacive dashboard.
