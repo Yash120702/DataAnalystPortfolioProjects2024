@@ -1,0 +1,3 @@
+1. Created a database on MS-SQL server with name "RoadAccidents".
+2. Imported excel files in the RoadAccidents database.
+3. Answered some questions with SQL to conduct exploratory data analysis on the dataset.
